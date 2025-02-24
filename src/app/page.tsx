@@ -117,9 +117,9 @@ export default function Home() {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-center mb-4">Plano Básico</h3>
             <p className="text-3xl font-bold text-center text-indigo-500 mb-4">
-              R$ 19,90
+              R$ 3,90
             </p>
-            <p className="text-gray-600 text-center mb-8">por mês</p>
+            <p className="text-gray-600 text-center mb-8">por aluno/mês</p>
             <ul className="text-gray-600 text-center">
               <li>Check-in e Check-out</li>
               <li>Notificações por E-mail</li>
@@ -136,9 +136,9 @@ export default function Home() {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-center mb-4">Plano Intermediário</h3>
             <p className="text-3xl font-bold text-center text-indigo-500 mb-4">
-              R$ 29,90
+              R$ 5,90
             </p>
-            <p className="text-gray-600 text-center mb-8">por mês</p>
+            <p className="text-gray-600 text-center mb-8">por aluno/mês</p>
             <ul className="text-gray-600 text-center">
               <li>Check-in e Check-out</li>
               <li>Notificações por E-mail e SMS</li>
@@ -155,9 +155,9 @@ export default function Home() {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-center mb-4">Plano Avançado</h3>
             <p className="text-3xl font-bold text-center text-indigo-500 mb-4">
-              R$ 39,90
+              R$ 10,90
             </p>
-            <p className="text-gray-600 text-center mb-8">por mês</p>
+            <p className="text-gray-600 text-center mb-8">por aluno/mês</p>
             <ul className="text-gray-600 text-center">
               <li>Check-in e Check-out</li>
               <li>Notificações por E-mail, SMS e Push</li>
