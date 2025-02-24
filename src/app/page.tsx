@@ -40,7 +40,7 @@ export default function Home() {
       </main>
 
       {/* Features Section */}
-      <section className="px-4 py-20">
+      <section id="sobre" className="px-4 py-20">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Tecnologia que transforma a presença escolar!
         </h2>
@@ -108,7 +108,7 @@ export default function Home() {
       </section>
 
       {/* Pricing Section */}
-      <section className="bg-gray-100 py-20 px-4">
+      <section id="precos" className="bg-gray-100 py-20 px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Planos e Preços
         </h2>
@@ -173,7 +173,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="bg-indigo-500 py-20 px-4">
+      <section id="suporte" className="bg-indigo-500 py-20 px-4">
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Pronto para começar?
@@ -193,7 +193,7 @@ export default function Home() {
                 id="name"
                 name="name"
                 placeholder="Seu nome"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 required
               />
             </div>
@@ -207,7 +207,7 @@ export default function Home() {
                 id="email"
                 name="email"
                 placeholder="seuemail@exemplo.com"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 required
               />
             </div>
@@ -221,14 +221,14 @@ export default function Home() {
                 name="message"
                 placeholder="Como podemos ajudar?"
                 rows={4}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 required
               ></textarea>
             </div>
 
             <button
               type="submit"
-              className="bg-indigo-500 text-white px-6 py-3 rounded-lg hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="bg-indigo-500 text-white px-6 py-3 rounded-lg hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500"
             >
               Enviar Mensagem
             </button>

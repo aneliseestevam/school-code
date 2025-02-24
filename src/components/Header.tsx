@@ -39,26 +39,26 @@ export default function Header() {
 
         {/* Links de Navegação (Desktop) */}
         <div className="hidden md:flex space-x-6">
-          <Link href="/sobre" className="hover:text-indigo-500">Sobre</Link>
-          <Link href="/como-funciona" className="hover:text-indigo-500">Como funciona</Link>
-          <Link href="/suporte" className="hover:text-indigo-500">Suporte</Link>
+          <Link href="#sobre" className="hover:text-indigo-500">Sobre</Link>
+          <Link href="#precos" className="hover:text-indigo-500">Preços</Link>
+          <Link href="#suporte" className="hover:text-indigo-500">Suporte</Link>
         </div>
 
         {/* Botões de Login e Cadastro (Desktop) */}
         <div className="hidden md:flex space-x-4">
-          <Link href="/signin" className="hover:underline py-2">Login</Link>
-          <Link href="/signup" className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-800">Cadastro</Link>
+          <Link href="#signin" className="hover:underline py-2">Login</Link>
+          <Link href="#signup" className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-800">Cadastro</Link>
         </div>
       </nav>
 
       {/* Menu Mobile (Abre/Fecha com o Hambúrguer) */}
       <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} bg-indigo-950`}>
         <div className="flex flex-col space-y-4 px-4 py-6">
-          <Link href="/sobre" className="hover:text-indigo-500">Sobre</Link>
-          <Link href="/como-funciona" className="hover:text-indigo-500">Como funciona</Link>
-          <Link href="/suporte" className="hover:text-indigo-500">Suporte</Link>
-          <Link href="/signin" className="hover:underline py-2">Login</Link>
-          <Link href="/signup" className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-800">Cadastro</Link>
+          <Link href="#sobre" className="hover:text-indigo-500">Sobre</Link>
+          <Link href="#precos" className="hover:text-indigo-500">Preços</Link>
+          <Link href="#suporte" className="hover:text-indigo-500">Suporte</Link>
+          <Link href="#signin" className="hover:underline py-2">Login</Link>
+          <Link href="#signup" className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-800">Cadastro</Link>
         </div>
       </div>
     </header>
