@@ -11,14 +11,14 @@ export default function Footer() {
               href="#"
               className="hover:underline"
             >
-              Privacy Policy
+              Política de privacidade
             </a>
             <span className="mx-2">|</span>
             <a
               href="#"
               className="hover:underline"
             >
-              Terms of Service
+              Termos de serviço
             </a>
           </div>
         </div>
