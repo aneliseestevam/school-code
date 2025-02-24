@@ -107,6 +107,21 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Download app */}
+      <section className="bg-gradient-to-r from-indigo-600 to-blue-500 py-20">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Faça o download agora do App School Code
+          </h2>
+          <p className="text-lg md:text-xl text-blue-100 mb-8">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacus risus, molestie id condimentum ut, semper vitae.
+          </p>
+          <button className="bg-white text-indigo-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-indigo-50 transition-colors">
+            Download
+          </button>
+        </div>
+      </section>
+
       {/* Pricing Section */}
       <section id="precos" className="bg-gray-100 py-20 px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
