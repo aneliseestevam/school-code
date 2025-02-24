@@ -1,100 +1,200 @@
-import Image from "next/image";
+import Image from 'next/image';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      {/* Header */}
+      <nav className="flex justify-between items-center py-4 px-4">
+        <Header />
+      </nav>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Hero Section */}
+      <main className="flex items-center justify-between pt-20 pb-6 px-20">
+        <div className="flex-1 pr-10">
+          <h1 className="text-4xl font-bold mb-4">A educação com mais controle e transparência para você!</h1>
+          <p className="mb-8">Simples. Rápido. Seguro. O futuro da presença escolar.</p>
+          <div className="space-x-4">
+            <button className="bg-indigo-500 text-white px-6 py-2 rounded">Baixe agora</button>
+            <button className="bg-transparent border border-indigo-500 text-indigo-500 px-6 py-2 rounded">Assista a demonstração</button>
+          </div>
+        </div>
+        <div className="flex-1 pt-10">
+          <Image
+            src="/hero-light.webp"
+            alt="App"
+            width={325}
+            height={546}
+            className="rounded-lg mx-auto max-w-full"
+          />
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      {/* Features Section */}
+      <section className="px-4 py-20">
+        <h2 className="text-4xl font-bold text-center mb-12">Tecnologia que transforma a presença escolar!</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {/* Feature 1 */}
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-2xl font-bold mb-4 text-center">Check-in Rápido e Seguro com QR Code</h3>
+            <p className="text-gray-600 text-center">
+              Facilite o controle de entrada e saída dos alunos com um simples escaneamento de QR Code. Mais agilidade e menos burocracia para a escola.
+            </p>
+          </div>
+
+          {/* Feature 2 */}
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-2xl font-bold mb-4 text-center">Pais Conectados em Tempo Real</h3>
+            <p className="text-gray-600 text-center">
+              Os responsáveis podem acompanhar a assiduidade dos alunos diretamente pelo aplicativo, garantindo mais transparência e segurança na rotina escolar.
+            </p>
+          </div>
+
+          {/* Feature 3 */}
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-2xl font-bold mb-4 text-center">Relatórios e Histórico de Presença</h3>
+            <p className="text-gray-600 text-center">
+              Acesso fácil a dados completos sobre a frequência dos alunos, permitindo análises e relatórios para tomada de decisão eficiente.
+            </p>
+          </div>
+
+          {/* Feature 4 */}
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-2xl font-bold mb-4 text-center">Notificações Instantâneas</h3>
+            <p className="text-gray-600 text-center">
+              Receba alertas automáticos sempre que o aluno realizar check-in ou check-out, mantendo os responsáveis informados em tempo real.
+            </p>
+          </div>
+
+          {/* Feature 5 */}
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-2xl font-bold mb-4 text-center">Segurança e Controle Escolar</h3>
+            <p className="text-gray-600 text-center">
+              Garanta que apenas alunos autorizados entrem e saiam da escola, reduzindo riscos e proporcionando mais tranquilidade para pais e gestores.
+            </p>
+          </div>
+
+          {/* Feature 6 */}
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-2xl font-bold mb-4 text-center">Integração Simples e Eficiente</h3>
+            <p className="text-gray-600 text-center">
+              Sistema fácil de integrar à infraestrutura da escola, compatível com diversos dispositivos e plataformas para uma implementação rápida.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="bg-gray-100 py-20 px-4">
+        <h2 className="text-4xl font-bold text-center mb-12">Planos e Preços</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {/* Price Card 1 */}
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-2xl font-bold text-center mb-4">Plano Básico</h3>
+            <p className="text-3xl font-bold text-center text-indigo-500 mb-4">R$ 3,90</p>
+            <p className="text-gray-600 text-center mb-8">por aluno/mês</p>
+            <ul className="text-gray-600 text-center">
+              <li>Check-in e Check-out</li>
+              <li>Notificações por E-mail</li>
+              <li>Suporte Básico</li>
+            </ul>
+            <div className="text-center">
+              <button className="bg-indigo-500 text-white px-6 py-2 rounded mt-8">Contratar Agora</button>
+            </div>
+          </div>
+          
+          {/* Price Card 2 */}
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-2xl font-bold text-center mb-4">Plano Intermediário</h3>
+            <p className="text-3xl font-bold text-center text-indigo-500 mb-4">R$ 5,90</p>
+            <p className="text-gray-600 text-center mb-8">por aluno/mês</p>
+            <ul className="text-gray-600 text-center">
+              <li>Check-in e Check-out</li>
+              <li>Notificações por E-mail e SMS</li>
+              <li>Suporte Prioritário</li>
+            </ul>
+            <div className="text-center">
+              <button className="bg-indigo-500 text-white px-6 py-2 rounded mt-8">Contratar Agora</button>
+            </div>
+          </div>
+
+          {/* Price Card 3 */}
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-2xl font-bold text-center mb-4">Plano Avançado</h3>
+            <p className="text-3xl font-bold text-center text-indigo-500 mb-4">R$ 10,90</p>
+            <p className="text-gray-600 text-center mb-8">por aluno/mês</p>
+            <ul className="text-gray-600 text-center">
+              <li>Check-in e Check-out</li>
+              <li>Notificações por E-mail, SMS e Push</li>
+              <li>Suporte Premium</li>
+            </ul>
+            <div className="text-center">
+              <button className="bg-indigo-500 text-white px-6 py-2 rounded mt-8">Contratar Agora</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="bg-indigo-500 py-20 px-4">
+        <div className="text-center">
+          <h2 className="text-4xl font-bold text-white mb-6">Pronto para começar?</h2>
+          <p className="text-xl text-blue-100 mb-8">
+            Entre em contato conosco para mais detalhes. Faça parte da revolução digital na educação!
+          </p>
+
+          {/* Formulário de Contato */}
+          <form className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+            <div className="mb-6">
+              <label htmlFor="name" className="block text-left text-gray-700 font-bold mb-2">Nome</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Seu nome"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              />
+            </div>
+
+            <div className="mb-6">
+              <label htmlFor="email" className="block text-left text-gray-700 font-bold mb-2">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="seuemail@exemplo.com"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              />
+            </div>
+
+            <div className="mb-6">
+              <label htmlFor="message" className="block text-left text-gray-700 font-bold mb-2">Mensagem</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Como podemos ajudar?"
+                rows={4}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              className="bg-indigo-500 text-white px-6 py-3 rounded-lg hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              Enviar Mensagem
+            </button>
+          </form>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-800 text-white py-4">
+        <Footer />
       </footer>
     </div>
   );
